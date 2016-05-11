@@ -2,36 +2,36 @@
 <html>
 <head>
     <title>#MESCHANSUMMER2016</title>
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  // Add the new slick-theme.css if you want the default styling
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
-<body>
-  <title><h1>MESCHAN SUMMER 2016</h1></title>
-  <center><p><h2>How to unbreak a #HeartBreak v.0.01</h2></p></center>
+<body bgcolor="#000000">
+  <center><p><h1 style="color:white;/">MESCHAN SUMMER 2016</h1 style="color:white;"></p></center>
+  <center><p><h2 style="color:white;/">How to unbreak a #HeartBreak v.0.01</h2></p></center>
   <br></br>
-  <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
+
+<div class="center-slider">
+  <div><img src="img/MS16cape-front.jpg"></img></div>
+  <div><img src="img/MS16cape-front-detail0.jpg"></img></div>
+  <div><img src="img/MS16-cape-back.jpg"></img></div>
 </div>
 
 
 
-<script src="js/blueimp-gallery.min.js"></script>
 
-<script>
-blueimp.Gallery(
-    document.getElementById('links').getElementsByTagName('a'),
-    {
-        container: '#blueimp-gallery-carousel',
-        carousel: true
-    }
-);
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+});
 </script>
-
 
 </body>
 </html>
